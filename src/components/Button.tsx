@@ -1,16 +1,8 @@
-import "./App.css";
+import "../App.css";
 const trash =
   "/static/media/trash-blank-alt-svgrepo-com.ae13f1edadb9f63ca9569682862765a3.svg";
 const plus =
   "/static/media/plus-svgrepo-com.a8c544fec9c3551920b234dd29919adc.svg";
-
-type ButtonProps = {
-  scale: string;
-  color: string;
-  rounded: string;
-  icon: string;
-  content: string;
-};
 
 const Button = ({
   scale = "scale-100",
@@ -21,7 +13,6 @@ const Button = ({
 }) => {
   return (
     <div className={scale}>
-      {/* TODO сделать чтоб интервал сохранялся при изменении масштаба */}
       <button
         className={
           "flex items-center gap-1 " +
@@ -35,7 +26,7 @@ const Button = ({
       >
         <img
           className="w-5 h-5 stroke-white fill-white"
-          src={icon == "plus" ? plus : trash}
+          src={icon === "plus" ? plus : trash}
           alt="button icon place"
         ></img>
         {content}

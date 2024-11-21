@@ -1,4 +1,4 @@
-import "./App.css";
+import "../App.css";
 import Button from "./Button";
 
 function String(props: { color: string }) {

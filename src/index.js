@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import StringsBlock from "./StringsBlock";
+import StringsBlock from "./components/StringsBlock";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const colorsFirst = [
