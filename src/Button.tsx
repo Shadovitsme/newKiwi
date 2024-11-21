@@ -2,7 +2,7 @@ import "./App.css";
 import plus from "./plus-svgrepo-com.svg";
 import trash from "./trash-blank-alt-svgrepo-com.svg";
 
-function Button(props) {
+function Button(props: any) {
   return (
     <div className={props.scale}>
       {/* TODO сделать чтоб интервал сохранялся при изменении масштаба */}

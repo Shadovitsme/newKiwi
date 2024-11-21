@@ -2,7 +2,7 @@ import "./App.css";
 import Button from "./Button";
 import plus from "./plus-svgrepo-com.svg";
 
-function String(props) {
+function String(props: any) {
   return (
     <div className="flex space-x-20 pb-10">
       <Button rounded="rounded-full" color={props.color} icon={plus} />
