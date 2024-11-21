@@ -1,7 +1,7 @@
 import "./App.css";
 import String from "./String";
 
-function StringsBlock(props: any) {
+function StringsBlock(props: { colors: [] }) {
   return (
     <div className="grid col-span-1">
       {props.colors.map((color: any, index: any) => (
